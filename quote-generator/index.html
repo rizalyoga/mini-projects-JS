@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Today's Quote</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="quote-box">
+          <h1>Today's Quote</h1>
+          <div class="quote-content">
+            <span>
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="quote-text">
+                Genius is one percent inspiration and ninety-nine percent
+                perspiration.
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </span>
+            <p class="author">- Thomas Edison -</p>
+          </div>
+          <hr />
+          <div class="quote-btn">
+            <span class="sosmed-btn">
+              <button title="sound" id="sound-btn" onclick="soundAction()">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+
+              <button title="copy" id="copy-btn" onclick="copyAction()">
+                <i class="fa-solid fa-copy"></i>
+              </button>
+
+              <button
+                title="twitter"
+                id="twitter-btn"
+                onclick="twitterAction()"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </button>
+            </span>
+            <button class="new-quote-btn" onclick="getQuote()">
+              New Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

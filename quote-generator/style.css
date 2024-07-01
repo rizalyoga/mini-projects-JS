@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+}
+
+.quote-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 240px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: rgb(245, 72, 101);
+}
+
+.quote-content {
+  width: 100%;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.quote-content span {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.quote-content .fa-quote-right {
+  display: flex;
+  align-items: end;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.author {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 14px 0;
+  text-align: end;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid grey;
+  opacity: 0.2;
+}
+
+.quote-btn {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sound-btn,
+#twitter-btn,
+#copy-btn {
+  text-align: center;
+  height: 38px;
+  width: 38px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+#sound-btn {
+  background: rgb(47, 204, 144);
+}
+
+#sound-btn:hover {
+  background: rgb(118, 236, 191);
+}
+
+#twitter-btn {
+  background: #11a7f1;
+}
+
+#twitter-btn:hover {
+  background: #60b7e3;
+}
+
+#copy-btn {
+  background: orange;
+}
+
+#copy-btn:hover {
+  background: rgb(250, 182, 56);
+}
+
+.new-quote-btn {
+  padding: 10px 20px;
+  background-color: rgb(245, 72, 101);
+  border-radius: 32px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-quote-btn:hover {
+  background-color: #2868f1;
+}
+
+.new-quote-btn:focus {
+  border: none;
+}
