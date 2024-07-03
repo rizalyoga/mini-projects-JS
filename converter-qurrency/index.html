@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Qurrency Converter</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="content-box">
+          <h2>CURRENCY CONVERTER</h2>
+          <div class="form-box">
+            <div class="amount-form-area">
+              <label for="amount">Enter Amount</label>
+              <input
+                name="amount"
+                id="amount-input"
+                type="text"
+                placeholder="Enter amount"
+                required
+              />
+            </div>
+            <div class="country-form-area">
+              <span class="from-country">
+                <label for="from-country">From</label>
+                <span>
+                  <img
+                    class="flag-from"
+                    src="https://flagsapi.com/ID/flat/64.png"
+                  />
+                  <select name="from-country" id="from-country"></select>
+                </span>
+              </span>
+              <i class="fa-solid fa-right-left left-right-arrow"></i>
+              <span class="to-country">
+                <label for="to-country">To</label>
+                <span>
+                  <img
+                    class="flag-to"
+                    src="https://flagsapi.com/US/flat/64.png"
+                  />
+                  <select name="to-country" id="to-country"></select>
+                </span>
+              </span>
+            </div>
+            <h5 class="result-convert">IDR 1.00 = $0.00</h5>
+            <button id="convert-btn">Convert</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/country-list.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

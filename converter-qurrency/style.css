@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(255, 193, 79);
+}
+
+.content-box {
+  background-color: white;
+  padding: 18px;
+  border-radius: 10px;
+  width: 380px;
+}
+
+h2 {
+  text-align: center;
+  margin: 14px 0;
+}
+
+.form-box {
+}
+
+.amount-form-area {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 8px;
+}
+
+.amount-form-area input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px grey solid;
+  font-size: 14px;
+}
+
+.country-form-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  gap: 12px;
+  width: 100%;
+}
+
+.from-country,
+.to-country {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.from-country span,
+.to-country span {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid grey;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.flag-from,
+.flag-to {
+  height: 34px;
+  width: 36px;
+}
+
+.country-form-area select {
+  padding: 4px;
+  border-radius: 4px;
+  background: white;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+select:focus,
+input:focus {
+  /* outline: orange auto 5px; */
+  outline: none;
+  /* border: 1.5px orange solid; */
+}
+
+.left-right-arrow {
+  margin-top: 31px;
+  cursor: pointer;
+}
+
+.result-convert {
+  margin: 20px 0 10px 0;
+}
+
+#convert-btn {
+  width: 100%;
+  border: none;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  background-color: orange;
+  transition: all 0.3s ease;
+}
+
+#convert-btn:hover {
+  background-color: rgb(255, 201, 101);
+}
+
+#convert-btn:active {
+  background-color: orange;
+}
