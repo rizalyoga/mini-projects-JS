@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(248, 77, 105);
+}
+
+.content-box {
+  width: 660px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  /* box-shadow: 10px 8px 40px rgb(76, 204, 209); */
+  border: solid 1px gray;
+}
+
+.form-area {
+  width: 100%;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 50%;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.button-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-area span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.arrow-left-right {
+  color: rgb(62, 62, 62);
+  cursor: pointer;
+}
+
+.speak-from-text,
+.speak-to-text,
+.copy-from-text,
+.copy-to-text {
+  cursor: pointer;
+  background-color: rgb(248, 133, 152);
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.speak-from-text:hover,
+.speak-to-text:hover,
+.copy-from-text:hover,
+.copy-to-text:hover {
+  background-color: rgb(227, 52, 81);
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  background: white;
+}
+
+select:focus {
+  outline: pink auto 5px;
+}
+
+#translate-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px 0;
+  border: none;
+  background-color: rgb(248, 77, 105);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+#translate-btn.active-btn {
+  cursor: progress;
+  background: grey;
+}
+
+#translate-btn:hover {
+  background: rgb(212, 0, 35);
+}
